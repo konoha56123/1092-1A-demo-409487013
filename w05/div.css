@@ -27,15 +27,15 @@ body {
 #heading ul {
   display: flex;
   list-style: none;
-  margin-top: 1.7rem;
+  margin-top: 1rem;
   padding-left: 2rem;
 }
 #heading li {
-  padding: 0 0.5rem 0.5rem 0.5rem;
+  padding: 0 0.4rem 0.5rem 0.5rem;
 }
 #heading li a {
   background-color: darksalmon;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 #heading li a:hover {
   background-color: crimson;
@@ -54,13 +54,16 @@ aside ul {
   display: flex;
   list-style: none;
   flex-direction: column;
+  margin: 1.7rem;
+  padding: 2rem;
 }
 aside li {
   margin: 1rem auto;
 }
+
 aside li a {
   background-color: darksalmon;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 aside li a:hover {
@@ -71,11 +74,12 @@ aside li a:hover {
   width: 80%;
   background-color: rgb(152, 230, 230);
 }
+
 .video-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
-  height:0;
+  height:0; 
 }
 
 .video-responsive iframe {
@@ -85,6 +89,7 @@ aside li a:hover {
   width: 95%;
   position: absolute;
 }
+
 #footer {
   width: 100%;
   height: 7rem;
