@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: rgb(234, 238, 228);
+}
+
+#container {
+  width: 90%;
+  border: 2px solid purple;
+  margin: 1.5rem auto;
+}
+
+#hea {
+  width: 100%;
+  height: 7rem;
+  background-color: rgb(233, 195, 27);
+  text-align: center;
+}
+#hea ul {
+  display: flex;
+  list-style: none;
+}
+#heading {
+  background-color: rgb(233, 195, 27);
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+#heading ul {
+  display: flex;
+  list-style: none;
+  margin-top: 1rem;
+  padding-left: 0rem;
+}
+#heading li {
+  padding: 0 1rem 1rem 0.3rem;
+}
+#heading li a {
+  background-color: darksalmon;
+  padding: 1rem;
+}
+#heading li a:hover {
+  background-color: crimson;
+}
+#pic {
+  background-color: rgb(233, 195, 27);
+  text-align: center;
+  margin-right:  1rem;
+  margin-left: auto;
+  margin-top: 0.5rem;
+}
+#pic ul {
+  display: flex;
+  list-style: none;
+  margin-top: 1rem;
+}
+#pic li {
+  padding: 0 1rem 1rem 0.3rem;
+}
+#pic li a {
+  background-color: darksalmon;
+  padding: 1rem;
+}
+#pic li a:hover {
+  background-color: crimson;
+}
+#main {
+  width: 100%;
+  background-color: rgb(141, 201, 46);
+  display: flex;
+}
+
+aside {
+  width: 20%;
+  background-color: rgb(141, 201, 46);
+}
+aside ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  margin: 1.7rem;
+  padding: 1.5rem;
+}
+aside li {
+  margin: 1.5rem auto;
+  top: 0.5rem;
+}
+
+aside li a {
+  background-color: darksalmon;
+  padding: 1rem;
+}
+
+aside li a:hover {
+  background-color: crimson;
+}
+
+#section {
+  width: 80%;
+  background-color: rgb(152, 230, 230);
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 2.5%;
+  top: 2.5%;
+  height: 95%;
+  width: 95%;
+  position: absolute;
+}
+
+#footer {
+  width: 100%;
+  height: 7rem;
+  background-color: darkgrey;
+}
