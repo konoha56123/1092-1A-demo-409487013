@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div Demo</title>
+    <link rel="stylesheet" href="./div_tku60.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="heading">
+        <h2>Heading</h2>
+        <div class="link">
+          <ul>
+            <li onclick="changeColor(1)">
+              <a href="#">Color 1 </a>
+            </li>
+            <li onclick="changeColor(2)">
+              <a href="#">Color 2</a>
+            </li>
+            <li onclick="changeColor(3)">
+              <a href="#">Color 3</a>
+            </li>
+          </ul>
+          <ul>
+            <li onclick="changeImage(1)">
+              <a href="#">Img 1 </a>
+            </li>
+            <li onclick="changeImage(2)">
+              <a href="#">Img 2</a>
+            </li>
+            <li onclick="changeImage(3)">
+              <a href="#">Img 3</a>
+            </li>
+            <li onclick="changeImage(4)">
+              <a href="#">Img 4 </a>
+            </li>
+            <li onclick="changeImage(5)">
+              <a href="#">Img 5 </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="main">
+        <aside>
+          <ul>
+            <li onclick="changeVideo(1)">
+              <a href="#">淡江大戲 1</a>
+            </li>
+            <li onclick="changeVideo(2)">
+              <a href="#">淡江大戲 2</a>
+            </li>
+            <li onclick="changeVideo(3)">
+              <a href="#">淡江大戲 3</a>
+            </li>
+            <li onclick="changeVideo(4)">
+              <a href="#">淡江大戲 4</a>
+            </li>
+            <li onclick="changeVideo(5)">
+              <a href="#">淡江大戲 5</a>
+            </li>
+          </ul>
+        </aside>
+        <div id="section">
+          <div class="video-responsive">
+            <div id="player">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/RechrtUxfQc"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <script src="./div_tku60.js"></script>
+  </body>
+</html>
