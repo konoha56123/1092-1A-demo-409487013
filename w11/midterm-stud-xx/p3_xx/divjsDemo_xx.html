@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div Demo</title>
+    <link rel="stylesheet" href="./divjsDemo_xx.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="heading">
+        <h2>Heading</h2>
+        <div class="link">
+          <ul>
+            <li onclick="hidemenu1()">
+              <a href="#">l 1 </a>
+            </li>
+            <li onclick="clearmenu()">
+              <a href="#">l 2</a>
+            </li>
+            <li onclick="hidemenu2()">
+              <a href="#">l 3</a>
+            </li>
+          </ul>
+          <ul>
+            <li onclick="changeColor(1)">
+              <a href="#">m 1 </a>
+            </li>
+            <li onclick="changeColor(2)">
+              <a href="#">m 2</a>
+            </li>
+            <li onclick="changeColor(3)">
+              <a href="#">m 3</a>
+          </ul>
+          <ul>
+            <li onclick="showtku60()">
+              <a href="#">r 1 </a>
+            </li>
+            <li onclick="clearmeun2all()">
+              <a href="#">r 2</a>
+            </li>
+            <li onclick="changeImage(3)">
+              <a href="#">r 3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="main">
+        <aside id="menu1">
+          <ul>
+
+          </ul>
+        </aside>
+        <div id="section">
+          
+          <div class="video-responsive">
+            <div id="player">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/RechrtUxfQc"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <aside id="menu2">
+          <ul>
+            <li onclick="changeVideo(1)">
+              <a href="#">淡江大戲 1</a>
+            </li>
+            <li onclick="changeVideo(2)">
+              <a href="#">淡江大戲 2</a>
+            </li>
+            <li onclick="changeVideo(3)">
+              <a href="#">淡江大戲 3</a>
+            </li>
+            <li onclick="changeVideo(4)">
+              <a href="#">淡江大戲 4</a>
+            </li>
+            <li onclick="changeVideo(5)">
+              <a href="#">淡江大戲 5</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <script src="./divjsDemo_xx.js"></script>
+  </body>
+</html>
