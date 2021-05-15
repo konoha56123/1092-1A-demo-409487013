@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  color: black;
+  font-size: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 110rem;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+}
+
+ul {
+  list-style: none;
+}
+
+/*nav*/
+.main_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6rem;
+  font-size: 1.2rem;
+}
+
+.main_nav .logo {
+  width: 11rem;
+}
+
+.main_nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_nav ul.main menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 2rem;
+}
+
+.main_nav ul li {
+  padding: 0 0.7rem;
+}
+
+.main_nav ul li a {
+  padding-bottom: 2px;
+}
+
+.main_nav ul li a:hover {
+  border-bottom: 2px solid #262626;
+}
+
+.showcase {
+  width: 100%;
+  height: 35rem;
+  background: url("./img/slide1.png") no-repeat center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 5rem;
+  font-size: 1.2rem;
+}
+
+.showcase h2,
+.showcase p {
+  margin-bottom: 1rem;
+}
+
+.showcase .btn {
+  margin-top: 1rem;
+  background: #262626;
+  color: white;
+  padding: 1rem 2rem;
+}
+/*# sourceMappingURL=style.css.map */
