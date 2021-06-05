@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Ibarra Real Nova', serif;
+  background-color: #f9f2f2;
+  font-size: 1.3rem;
+}
+
+@mixin customShadow($size){
+  border: 0.2px solid rgba(0,0,0,0.6);
+  box-shadow: -$size $size 0 0 rgba(0,0,0,0.2);  
+}
+
+@mixin setDisplayWidth($width, $margin){
+  width: $width;
+  margin: $margin auto;
+}
+//header
+header{
+  display: grid;
+  padding: 2rem 0;
+  margin: 10rem auto;
+  @include setDisplayWidth(90vw, 0);
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Archivo Narrow';
+
+
+    div{
+      padding: 3rem 3rem;
+      @include customShadow(0.3rem);
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.main-navigation{
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  margin:5em;
+  margin-left:1rem ;
+  width: 100%;
+}
+
+ul{
+  margin:0; //reset
+  padding:0;
+}
+
+.menu{
+  display:flex;  
+  flex-direction:column;
+  
+  li{
+    display:block;
+    list-style-type:none;
+    text-transform:uppercase;
+  }
+  
+  li a{
+    display:flex;
+    text-align:center;
+    text-decoration:none;
+    color:#777;
+    padding:1rem;
+  }
+  
+  li a:hover{
+    background:#777;
+    color:#fff;
+  }
+} 
+
+@media (min-width: 800px) {
+    .menu{
+      flex-direction:row;
+      justify-content:space-between;
+    }
+}
+
+.menu-item-has-children > a:after{
+  font-family:'Genericons';
+  content: '\f431';
+  padding:1px;
+}
+
+nav ul ul {
+    display: none;
+}
+
+@media (min-width: 800px) {
+  nav ul ul {
+    display: none;
+    position:absolute;
+  }
+}
+
+nav ul li:hover > ul {
+  display:block;
+  color:#fff;
+  padding-left:2rem;
+}
+
+@media (min-width: 800px) {
+  nav ul li:hover > ul {
+    padding-left:0;
+    background:#777;
+  }
+  
+  nav ul li:hover > ul a{
+    color:#fff;
+  }
+  
+  .sub-menu{
+    li{
+      display:flex;
+      padding-right:2em;
+    }
+    
+    li:hover, li a:hover{
+      background:#ddd;
+      color:#777;
+    }
+  }
+  
+  nav ul ul ul{
+    margin:0 0 0 100%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .menu-item-has-children .menu-item-has-children > a:after{
+    font-family:'Genericons';
+    content: '\f431';
+    padding:1px;
+    transform: rotate(-90deg);
+  }
+  
+}
+
+
+
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-left: 1rem;
+}
+
+//section
+
+body {
+  background: #333;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+h2 span {
+  font-size: 30px;
+}
+
+a {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem 1rem;
+}
+a:hover {
+  background-color: rgb(12, 8, 9);
+  padding: 1rem 1rem;
+  color: rgb(252, 252, 252);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 1.5rem 5rem;
+}
+
+.container > div {
+  cursor: pointer;
+  height: 210px;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  transition: all 0.5s ease-in;
+}
+
+.container > div:hover {
+  opacity: 0.7;
+  transform: scale(0.98);
+}
+
+.container > div:nth-of-type(1) {
+  grid-column: 1 / 3;
+}
+
+.container > div:nth-of-type(6) {
+  grid-column: 3 / 5;
+}
+
+.container > div:nth-of-type(9) {
+  grid-column: 3 / 5;
+}
+
+.container > div:nth-of-type(10) {
+  grid-column: 1 / 3;
+}
+
+.bg1 {
+  background: url('https://i.ibb.co/dBLbrRV/bg1.jpg');
+}
+
+.bg2 {
+  background: url('https://i.ibb.co/Fb5jb3J/bg2.jpg');
+  color: #333;
+}
+
+
+@media (min-width:760px) {
+  header{
+    grid-template-columns: repeat(3,1fr);
+    -ms-grid-columns:1fr 1fr 1fr ;
+    .logo{
+      justify-self: start;
+
+    }
+  }
+}
