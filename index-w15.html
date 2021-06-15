@@ -13,86 +13,29 @@
         <div class="logo">
             <div>Portfolio</div>
         </div>
-        <nav class="main-navigation">
-          <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li class="menu-item-has-children"><a href="#">Services</a>
-              <ul class="sub-menu">
-                <li><a href="#">Plumbing</a></li>
-                <li class="menu-item-has-children"><a href="#">Heating</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">Residential</a></li>
-                    <li><a href="#">Commercial</a></li>
-                    <li><a href="#">Industrial</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Electrical</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
-
-        <div class="search">
-          <form>
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit">Search</button>
-          </form>
-        </div>
+          <div class="menu">
+            <li onclick="goback()"><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            
+          </div>
     </header>
 
 
-    <div class="container">
-      <div class="bg1">
-        <h2>w01 intro</h2>
-        <a href="./w01-intro-pokemon/intro.html">link</a>
+    <section class="landing">
+      <div class="dark-overlay">
+          <div class="landing-inner">
+              <h1 class="x-large">歡迎來到我的網站</h1>
+              <p class="lead">
+                我是學號409487013 陳冠宇 請多多指教 
+              </p>
+              <div class="buttons" >
+                  <a onclick="gopage(1)" class="btn btn-primary">Portfolio</a>
+                  <a onclick="gopage(2)" class="btn btn-primary">心得</a>
+              </div>
+          </div>
+          
       </div>
-      <div class="bg1">
-        <h2>w02 pokemon</h2>
-        <a href="./w01-intro-pokemon/pokemon.html">link</a>
-      </div>
-      <div class="bg2">
-        <h2>w03 blog</h2>
-        <a href="./w04/blog.html">link</a>
-      </div>
-      <div class="bg1">
-        <h2>w04 tku01</h2>
-        <a href="./w05/div.html">link</a>
-      </div>
-      <div class="bg1">
-        <h2>w05 grid01</h2>
-        <a href="./w7.5/grid.html">link</a>
-      </div>
-      <div class="bg2">
-        <h2>w06 grid02</h2>
-        <a href="./w08/div.html">link</a>
-      </div>
-      <div class="bg1">
-        <h2>w07 iframeDemo</h2>
-        <a href="./w09/iframeDemo.html">link</a>
-      </div>
-      <div class="bg1">
-        <h2>w08 midterm</h2>
-        <a href="./w11/midterm-stud-xx/p4_nav_xx.html">link</a>
-      </div>
-      <div class="bg2">
-        <h2>w09 microsoft01</h2>
-        <a href="./w12/index.html">link</a>
-      </div>
-      <div class="bg2">
-        <h2>w10 microsoft02</h2>
-        <a href="./w13/index.html">link</a>
-      </div>
-      <div class="bg2">
-        <h2>w11 microsoft03</h2>
-        <a href="./w14/index.html">link</a>
-      </div>
-      <div class="bg2">
-        <h2>w12  imga</h2>
-        <a href="./w02-imgal/imageGallery.html">link</a>
-      </div>
-    </div>
+  </section>
+  <script src="./w15.js"></script>
 </body>
 </html>
