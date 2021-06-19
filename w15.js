@@ -27,12 +27,25 @@
           我是學號409487013 陳冠宇 請多多指教
           </p>
           <div class="buttons" >
-            
+         
               <a onclick="gopage(1)" class="btn btn-primary">Portfolio</a>
               <a onclick="gopage(2)" class="btn btn-primary">心得</a>
+               <a onclick="go(1)" class="btn btn-primary">任天堂</a>
           </div>
       </div>
             
           `
        }
+
+       function go(index) {
+        const player = document.querySelector('.landing');
+        console.log('player', player);
+        switch (index) {
+          case 1:
+            player.innerHTML = `<iframe  src="./任天堂/index.html" width="100%" height="100%"></iframe>`;
+            break;
+         }
+        }
+
+      
       
